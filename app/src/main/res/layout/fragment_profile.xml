@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/realuser"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:src="@drawable/woman"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/details"
+            android:layout_below="@id/realuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/transparent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME : Marry"
+                android:textStyle="italic|bold"
+                android:layout_margin="10dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL : marryshine@gmail.com"
+                android:textStyle="italic|bold"
+                android:layout_margin="10dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHONE : +91-1234567810"
+                android:textStyle="italic|bold"
+                android:layout_margin="10dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FASHIO COINS : 500 coins "
+                android:textStyle="italic|bold"
+                android:layout_margin="10dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS : Chennai,TamilNadu"
+                android:textStyle="italic|bold"
+                android:layout_margin="10dp"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

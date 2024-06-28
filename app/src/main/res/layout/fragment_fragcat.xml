@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".Fragcat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/catlay"
+            android:background="@drawable/transparent"
+            android:layout_marginTop="5dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cattext"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/black"
+                    android:hint="All Categories"/>
+
+                <ImageView
+                    android:id="@+id/catsearch"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/search"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/mic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/microphone"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_below="@id/catlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/allcat"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="#19CDDC39"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/shirt"
+                        android:layout_width="70dp"
+                        android:layout_height="215dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/blouse" />
+
+                    <ImageView
+                        android:id="@+id/croptop"
+                        android:layout_width="70dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/strapless_dress" />
+
+                    <ImageView
+                        android:id="@+id/fulldress"
+                        android:layout_width="70dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/dress" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/child"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

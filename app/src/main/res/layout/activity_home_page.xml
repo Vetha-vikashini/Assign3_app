@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".HomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headconst">
+        <TextView
+            android:id="@+id/fashio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fashio"
+            android:textSize="25dp"
+            android:fontFamily="@font/jore"
+            android:textStyle="bold|italic|normal"
+            android:background="#ECBF63"
+            android:textColor="#9C27B0"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_below="@id/fashio"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/transparent"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/search"
+                android:padding="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColorHint="@color/black" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ECBF63"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/home1" />
+
+        <ImageView
+            android:id="@+id/category"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/category_alt"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/homeFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headconst"
+        android:layout_above="@id/footer">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
